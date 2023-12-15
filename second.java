@@ -12,7 +12,6 @@ public class MaxNumberFinder {
                 int maxInSubArray = findMaxNumber((Object[]) element);
                 maxNumber = Math.max(maxNumber, maxInSubArray);
             }
-            // You can add additional conditions for other data types if needed
         }
 
         return maxNumber;
