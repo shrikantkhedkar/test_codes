@@ -50,7 +50,6 @@ class C {
 
 public class Main {
     public static void main(String[] args) {
-        // Example usage:
         A classA = new A(123, 456);
         B classB = new B(classA);
         C classC = new C(classB);
