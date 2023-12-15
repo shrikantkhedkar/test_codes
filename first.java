@@ -2,14 +2,11 @@ package meta;
 public class LongestWordFinder {
 
     public static String findLongestWord(String input) {
-        String[] words = input.split("\\s+"); // Split the input string into words
-
+        String[] words = input.split("\\s+"); 
         String longestWord = "";
 
         for (String word : words) {
-            // Remove non-alphabetic characters for accurate word length
             String cleanWord = word.replaceAll("[^a-zA-Z]", "");
-
             if (cleanWord.length() > longestWord.length()) {
                 longestWord = cleanWord;
             }
